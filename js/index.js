@@ -1,3 +1,21 @@
+
+// num divide by 2& 10
+
+function fu(){
+
+var ne=document.getElementById("mynum").value;
+
+if (ne%2==0&& ne%10==0){
+
+    window.alert("you enter "+ne+ "yes" );
+
+}
+else{
+    window.alert("you enter "+ne+ "no" );  
+}
+
+}
+
 // <!-- print num && div 3 &4 -->
 function fn1(){
 
@@ -94,15 +112,30 @@ function fn6(){
     }
 }
 // print from 1 to x
-function fn7(){
+//  function fn7(){
     
-    var x=document.getElementById("number11").value;
-    for(var i=1;i<=x;i++){
-        window.alert(i);
+//      var x=document.getElementById("number11").value;
+//      for(var i=1;i<=x;i++){
+//         window.alert(i);
 
        
-    }
-} 
+// }
+
+// } 
+
+ function fn7(){
+
+    var x=document.getElementById("number11").value;
+  var arry=[x];
+
+   for( var i=0;i<=x;i++ ){
+ arry[i]=i;
+ 
+
+     }
+     window.alert(arry);
+}
+
 // multiple 12
 function fn8(){
     var x=document.getElementById("number12").value;
@@ -116,10 +149,14 @@ function fn8(){
 // even num between 1to x 
 function fn9(){
     var x=document.getElementById("number13").value;
+let near=[];
     for (var i=1;i<=x;i++){
         if(i%2==0)
-        window.alert(i);  
+        near[i]=i;
+       
     }
+    
+    window.alert(near); 
 }
 // power
 function fn10 (){
@@ -336,3 +373,21 @@ window.alert(Number(x)/Number(y));
 
    
 }
+function fn24(){
+   var h= document.getElementById("img");
+   if (h.src.match("images/alexandru-stavrica-170390-800x760.jpg")){
+       h.src="images/dark.png";
+   }
+   else{
+   h.src="images/alexandru-stavrica-170390-800x760.jpg";}
+
+
+}
+function fn25(){
+    var h= document.getElementById("text1");
+    if (h.style.color="blue"){
+        h.style.color="red";
+    }
+    else{
+h.style.color="blue";
+ }}
