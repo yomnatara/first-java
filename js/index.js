@@ -375,11 +375,11 @@ window.alert(Number(x)/Number(y));
 }
 function fn24(){
    var h= document.getElementById("img");
-   if (h.src.match("images/alexandru-stavrica-170390-800x760.jpg")){
-       h.src="images/dark.png";
+   if (h.src.match("alexandru-stavrica-170390-800x760.jpg")){
+       h.src="dark.png";
    }
    else{
-   h.src="images/alexandru-stavrica-170390-800x760.jpg";}
+   h.src="alexandru-stavrica-170390-800x760.jpg";}
 
 
 }
